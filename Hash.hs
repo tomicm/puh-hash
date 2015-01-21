@@ -12,13 +12,6 @@ import System.IO
 import System.Directory
 import System.Environment
 
-main = do
-  args <- getArgs
-
-  if null args
-  then runInteractive 
-  else runScript (args!!0)
-
 executeHashRc :: IO VarTable
 executeHashRc = do
   homeDir <- getHomeDirectory
