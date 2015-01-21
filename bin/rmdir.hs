@@ -8,8 +8,8 @@ main = do
 
   -- rmdir takes at least one argument
   if null args
-  then error "missing operand"
-  else return ()
+    then error "missing operand"
+    else return ()
 
   forM args $ \dir -> do
     -- try to remove each directory and print some stuff it doesn't work

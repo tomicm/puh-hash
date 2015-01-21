@@ -5,5 +5,5 @@ main = do
   args <- getArgs
 
   if null args
-  then runInteractive 
-  else runScript (args!!0)
+    then runInteractive 
+    else runScript (args!!0)

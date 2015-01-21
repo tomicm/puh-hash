@@ -7,8 +7,8 @@ main = do
   args <- getArgs
 
   if null args
-  then error "missing operand"
-  else return ()
+    then error "missing operand"
+    else return ()
 
   forM args $ \name -> do
   -- try to remove all the arguments, and print stuff if anything goes wrong

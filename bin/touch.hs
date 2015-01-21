@@ -8,8 +8,8 @@ main = do
   
   -- touch requires at least one argument
   if null args
-  then error "missing operand"
-  else return ()
+    then error "missing operand"
+    else return ()
 
   -- touch everyone if appropriate
   forM args $ \filename -> do

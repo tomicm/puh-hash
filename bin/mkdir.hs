@@ -8,8 +8,8 @@ main = do
 
   -- mkdir takes at least one argument
   if null args 
-  then error "missing operand"
-  else return ()
+    then error "missing operand"
+    else return ()
 
   forM args $ \dir -> do
   -- try to make some directory and print some stuff if anything goes wrong 

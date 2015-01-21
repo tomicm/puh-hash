@@ -17,8 +17,8 @@ executeHashRc = do
   homeDir <- getHomeDirectory
   exists <- doesFileExist (homeDir ++ "/.hashrc")
   if exists
-  then runScriptWithRet emptyState (homeDir ++ "/.hashrc")
-  else return emptyState
+    then runScriptWithRet emptyState (homeDir ++ "/.hashrc")
+    else return emptyState
 
 runInteractive :: IO ()
 runInteractive = do
