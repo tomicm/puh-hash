@@ -1,3 +1,5 @@
+module Hash (runInteractive, runScript) where
+
 import Control.Exception
 import Control.Monad
 import Data.Maybe
